@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  /* background-color: whitesmoke; */
+}
+
+.container {
+  border: 1px solid #7e4c4c;
+  width: 550px;
+  height: 350px;
+}
+
+.main {
+  width: 250px;
+  border: 1px solid black;
+  height: 350px;
+}
+
+.input-name {
+  border-bottom: 1px solid #999;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+
+.input-password {
+  border-bottom: 1px solid #999;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 36px;
+  font-weight: 700;
+  width: 500px;
+  color: #222;
+}
+
+.name {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 6px 30px;
+}
+
+.password {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 6px 30px;
+}
+
+.warning {
+  display: none;
+}
+
+.password:focus ~ .warning {
+  width: 230px;
+  text-align: center;
+  background-color: #f7ecec;
+  color: #cc282a;
+  font-size: 10px;
+  text-indent: 1px;
+  text-indent: 27px;
+  position: absolute;
+  bottom: 351px;
+  left: 9px;
+  font-weight: bold;
+  line-height: 16px;
+  display: block;
+}
+
+:placeholder-shown {
+  text-align: center;
+}
+
+.fa-id-badge {
+  position: absolute;
+  top: 100px;
+  left: 8px;
+  font-size: 14px;
+}
+
+.fa-lock {
+  position: absolute;
+  top: 163px;
+  font-size: 14px;
+  left: 8px;
+}
+
+.b1 {
+  width: 200px;
+  height: 34px;
+  padding: 6px 30px;
+  font-size: 13px;
+  border-radius: 10px;
+  background-color: #5370fd;
+  border: 1px solid #5370fd;
+  color: white;
+  transition: 1s;
+  margin-top: 50px;
+  margin-left: 17px;
+}
+
+.b1:hover {
+  border: 1px solid #5370fd;
+  color: #5370fd;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.b2 {
+  width: 100px;
+  height: 30px;
+  padding: 6px 29px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: 1px solid #5370fd;
+  color: #5370fd;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: 65px;
+  transition: 1s;
+}
+
+.b2:hover {
+  background-color: #5370fd;
+  border: 1px solid #5370fd;
+  color: white;
+  /* transform: scale(1.1); */
+}
