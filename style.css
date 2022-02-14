@@ -3,39 +3,186 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
-  /* background-color: whitesmoke; */
 }
-
+/* Container */
 .container {
-  border: 1px solid #7e4c4c;
-  width: 550px;
-  height: 350px;
+  width: 500px;
+  height: 405px;
+  margin: 0 auto;
+  border: 1px solid #faf7f7;
+  box-shadow: 0px 0px 14px 5px #bfbcbc;
 }
 
+/* Main Form */
 .main {
   width: 250px;
-  border: 1px solid black;
-  height: 350px;
+  height: 399px;
 }
 
-.input-name {
-  border-bottom: 1px solid #999;
-  margin-top: 30px;
-  margin-bottom: 35px;
-}
-
-.input-password {
-  border-bottom: 1px solid #999;
-  margin-top: 10px;
-}
-
-h2 {
+/* Main-Title */
+.main-title {
   text-align: center;
   margin-top: 18px;
   font-size: 36px;
   font-weight: 700;
   width: 500px;
   color: #222;
+  padding: 10px 0px;
+}
+
+/*Choosing Plan  */
+.plan-choose {
+  position: absolute;
+  top: 83px;
+  width: 235px;
+  text-align: center;
+  background-color: #cbe6cb;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 55px;
+  right: 396px;
+  /* box-shadow: 0px 0px 14px 5px #dbd8d8; */
+}
+
+.plan-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Check plan (1)*/
+.check-one {
+  position: absolute;
+  left: 3px;
+  bottom: 2px;
+}
+.check-one:hover {
+  color: teal;
+}
+
+/* Choosing Free plan */
+.free-plan {
+  display: none;
+}
+#free:checked ~ .free-plan {
+  position: absolute;
+  width: 224px;
+  border: 2px solid teal;
+  display: block;
+  top: 21px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+.h1 {
+  background-color: teal;
+  color: white;
+}
+
+ul li {
+  text-align: center;
+  color: #3f3d3d;
+  padding: 15px 10px;
+  border: 1px solid #f2f2f2;
+  list-style: none;
+}
+
+.footer {
+  text-align: center;
+  width: 95px;
+  margin: 14px auto;
+  padding: 8px 0;
+  border-radius: 7px;
+}
+.f1 {
+  background-color: teal;
+  color: white;
+}
+
+/* Check plan (2) */
+.check-two {
+  position: absolute;
+  left: 92px;
+  bottom: 2px;
+}
+
+.check-two:hover {
+  color: gold;
+}
+
+/* Choosing Gold plan */
+.gold-plan {
+  display: none;
+}
+
+#gold:checked ~ .gold-plan {
+  position: absolute;
+  width: 224px;
+  border: 2px solid #f5a623;
+  display: block;
+  top: 21px;
+  border-radius: 10px;
+  overflow: hidden;
+  right: -91px;
+}
+
+.h2 {
+  background-color: #f5a623;
+  color: white;
+}
+
+.f2 {
+  background-color: #f5a623;
+  color: white;
+}
+
+/* Check plan (3) */
+.check-three {
+  position: absolute;
+  left: 160px;
+  bottom: 2px;
+}
+
+.check-three:hover {
+  color: whitesmoke;
+}
+
+/* Choosing Diamond Plan */
+.diamond-plan {
+  display: none;
+}
+
+#diamond:checked ~ .diamond-plan {
+  position: absolute;
+  width: 224px;
+  border: 2px solid #70d1f4;
+  display: block;
+  top: 21px;
+  border-radius: 10px;
+  overflow: hidden;
+  right: 2px;
+}
+
+.h3 {
+  background-color: #70d1f4;
+  color: white;
+}
+
+.footer.f3 {
+  background-color: #70d1f4;
+  color: white;
+}
+
+/* Input Section */
+/* Input Name */
+.input-name {
+  border-bottom: 1px solid #999;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .name {
@@ -45,6 +192,19 @@ h2 {
   padding: 6px 30px;
 }
 
+.fa-id-badge {
+  position: absolute;
+  left: 400px;
+  top: 118px;
+  font-size: 17px;
+}
+
+/* Input Password */
+.input-password {
+  border-bottom: 1px solid #999;
+  margin-top: 10px;
+}
+
 .password {
   border: none;
   background: none;
@@ -52,6 +212,14 @@ h2 {
   padding: 6px 30px;
 }
 
+.fa-lock {
+  position: absolute;
+  left: 400px;
+  top: 178px;
+  font-size: 17px;
+}
+
+/* Password Warning */
 .warning {
   display: none;
 }
@@ -65,32 +233,20 @@ h2 {
   text-indent: 1px;
   text-indent: 27px;
   position: absolute;
-  bottom: 351px;
-  left: 9px;
+  bottom: 337px;
+  left: 396px;
   font-weight: bold;
   line-height: 16px;
   display: block;
 }
 
-:placeholder-shown {
+.name,
+.password:placeholder-shown {
   text-align: center;
 }
 
-.fa-id-badge {
-  position: absolute;
-  top: 100px;
-  left: 8px;
-  font-size: 14px;
-}
-
-.fa-lock {
-  position: absolute;
-  top: 163px;
-  font-size: 14px;
-  left: 8px;
-}
-
-.b1 {
+/* Register */
+.btn1 {
   width: 200px;
   height: 34px;
   padding: 6px 30px;
@@ -104,7 +260,7 @@ h2 {
   margin-left: 17px;
 }
 
-.b1:hover {
+.btn1:hover {
   border: 1px solid #5370fd;
   color: #5370fd;
   background-color: white;
@@ -112,7 +268,7 @@ h2 {
   font-weight: bold;
 }
 
-.b2 {
+.btn2 {
   width: 100px;
   height: 30px;
   padding: 6px 29px;
@@ -128,9 +284,8 @@ h2 {
   transition: 1s;
 }
 
-.b2:hover {
+.btn2:hover {
   background-color: #5370fd;
   border: 1px solid #5370fd;
   color: white;
-  /* transform: scale(1.1); */
 }

@@ -12,9 +12,62 @@
     />
   </head>
   <body>
+    <!-- Container -->
     <div class="container">
-      <form class="main" action="">
-        <h2>"Scubscribe Our Channel!"</h2>
+      <form class="main" action="#">
+        <h2 class="main-title">"Scubscribe Our Channel!"</h2>
+        <!-- Choosing plan -->
+        <div class="plan-choose">
+          <p class="plan-title">Choose Your Plan</p>
+          <br />
+          <!-- Check plan(1) -->
+          <div class="check-one">
+            <label for="free">Free</label>
+            <input type="radio" name="plan" id="free" />
+            <!-- Choosing Free plan -->
+            <div class="free-plan">
+              <p class="heading h1">Free</p>
+              <ul>
+                <li>hell0 hello hello hello</li>
+                <li>hell0 hello hello hello</li>
+                <li>hell0 hello hello hello</li>
+              </ul>
+              <p class="footer f1">Free</p>
+            </div>
+          </div>
+          <!-- Check plan(2) -->
+          <div class="check-two">
+            <label for="gold">Gold</label>
+            <input type="radio" name="plan" id="gold" />
+            <!-- choosing Gold plan -->
+            <div class="gold-plan">
+              <p class="heading h2">Gold</p>
+              <ul>
+                <li>hell0 hello hello hello</li>
+                <li>hell0 hello hello hello</li>
+                <li>hell0 hello hello hello</li>
+              </ul>
+              <p class="footer f2">Gold</p>
+            </div>
+          </div>
+          <!-- Check plan(3) -->
+          <div class="check-three">
+            <label for="diamond">Diamond</label>
+            <input type="radio" name="plan" id="diamond" />
+            <!-- Choosing Diamond Plan -->
+            <div class="diamond-plan">
+              <p class="heading h3">Diamond</p>
+              <ul>
+                <li>Diamond Diamond Diamond</li>
+                <li>Diamond Diamond Diamond</li>
+                <li>Diamond Diamond Diamond</li>
+              </ul>
+              <p class="footer f3">Diamond</p>
+            </div>
+          </div>
+        </div>
+        <!-- Input Section -->
+        <!-- Input Name -->
         <div class="input-name">
           <label for="">
             <i class="fa-solid fa-id-badge"></i>
@@ -27,6 +80,7 @@
             placeholder="Your Name"
           />
         </div>
+        <!-- Input Password -->
         <div class="input-password">
           <label for="">
             <i class="fa-solid fa-lock"></i>
@@ -38,14 +92,17 @@
             id=""
             placeholder="Password"
           />
+
+          <!-- Password Warning -->
           <div class="warning">
             Password Must be 8 digit. Must include [A-Z] (a-z) {0-9}
           </div>
         </div>
+        <!-- Register -->
         <div class="register">
-          <button class="b1">Register</button>
+          <button class="btn1">Register</button>
           <br />
-          <button class="b2">Cancel</button>
+          <button class="btn2">Cancel</button>
         </div>
       </form>
     </div>
