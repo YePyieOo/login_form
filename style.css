@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
 }
 /* Container */
 .container {
@@ -24,7 +23,6 @@
   text-align: center;
   margin-top: 18px;
   font-size: 36px;
-  font-weight: 700;
   width: 500px;
   color: #222;
   padding: 10px 0px;
@@ -41,7 +39,6 @@
   font-size: 14px;
   height: 55px;
   right: 396px;
-  /* box-shadow: 0px 0px 14px 5px #dbd8d8; */
 }
 
 .plan-title {
@@ -181,22 +178,23 @@ ul li {
 /* Input Name */
 .input-name {
   border-bottom: 1px solid #999;
-  margin-top: 30px;
-  margin-bottom: 35px;
+  margin: 30px 0 35px 0;
 }
 
-.name {
+.name,
+.password {
   border: none;
-  background: none;
   outline: none;
   padding: 6px 30px;
 }
 
-.fa-id-badge {
+.fa-solid {
   position: absolute;
-  left: 400px;
-  top: 118px;
   font-size: 17px;
+  left: 400px;
+}
+.fa-id-badge {
+  top: 118px;
 }
 
 /* Input Password */
@@ -205,18 +203,8 @@ ul li {
   margin-top: 10px;
 }
 
-.password {
-  border: none;
-  background: none;
-  outline: none;
-  padding: 6px 30px;
-}
-
 .fa-lock {
-  position: absolute;
-  left: 400px;
   top: 178px;
-  font-size: 17px;
 }
 
 /* Password Warning */
@@ -225,19 +213,18 @@ ul li {
 }
 
 .password:focus ~ .warning {
+  display: block;
   width: 230px;
   text-align: center;
   background-color: #f7ecec;
   color: #cc282a;
   font-size: 10px;
-  text-indent: 1px;
   text-indent: 27px;
   position: absolute;
   bottom: 337px;
   left: 396px;
   font-weight: bold;
   line-height: 16px;
-  display: block;
 }
 
 .name,
